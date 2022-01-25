@@ -3,6 +3,8 @@
  * @author Yosef Samuel
  * @param {string} str - string to be printed
  */
-module.exports = function displayMessage (str) {
+function displayMessage (str) {
   console.log(str);
 };
+
+module.exports = displayMessage;
