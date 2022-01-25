@@ -4,7 +4,7 @@ const fs = require('fs');
  * Reading a file asynchronously with Node JS
  * @author Yosef Samuel
  * @param {string} path
- * @return {void}
+ * return {void}
  */
 async function countStudents (path) {
   return new Promise((resolve, reject) => {
