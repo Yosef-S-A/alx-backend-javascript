@@ -1,12 +1,12 @@
 const fs = require('fs');
 
 /*
- * Reading a file synchronously with Node JS
+ * Reading a file asynchronously with Node JS
  * @author Yosef Samuel
  * @param {string} path
  * @return {void}
  */
-module.exports = async function countStudents (path) {
+async function countStudents (path) {
   return new Promise((resolve, reject) => {
     fs.readFile(path, 'utf8', (err, data) => {
       if (err) {
@@ -32,4 +32,6 @@ module.exports = async function countStudents (path) {
       resolve(result);
     });
   });
-};
+}
+
+module.exports = countStudents;
