@@ -1,11 +1,11 @@
+const fs = require('fs');
+
 /*
  * Reading a file synchronously with Node JS
  * @author Yosef Samuel
  * @param {string} path
- * @return {void}
+ * return {void}
  */
-const fs = require('fs');
-
 function countStudents (path) {
   try {
     const data = fs.readFileSync(path, 'utf-8');
