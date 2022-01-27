@@ -1,3 +1,7 @@
+/*
+ * contains test cases for calculateNumber function
+ */
+
 const assert = require('assert').strict;
 const calculateNumber = require('./1-calcul');
 
