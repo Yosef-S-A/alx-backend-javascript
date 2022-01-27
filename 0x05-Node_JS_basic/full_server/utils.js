@@ -9,7 +9,7 @@ const fs = require('fs');
 * return {object}
 */
 
-function readDatabase (path) {
+function readDatabase(path) {
   return new Promise((resolve, reject) => {
     fs.readFile(path, 'utf8', (err, data) => {
       if (err) {
