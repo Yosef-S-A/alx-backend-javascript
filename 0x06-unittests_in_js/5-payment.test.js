@@ -1,3 +1,6 @@
+/*
+ * test suit for 5-payment.js
+ */
 const sinon = require('sinon');
 var { expect } = require('chai');
 
