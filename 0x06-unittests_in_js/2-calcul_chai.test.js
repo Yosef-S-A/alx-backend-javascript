@@ -1,3 +1,8 @@
+/*
+ * contains test cases for calculateNumber function
+ * using Chai assertion liberary
+ * using expect from Chai
+ */
 var chai = require('chai');
 const calculateNumber = require('./2-calcul_chai');
 
