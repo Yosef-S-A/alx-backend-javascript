@@ -1,13 +1,13 @@
 import readDatabase from '../utils';
 
 class StudentsController {
-  static getAllStudents(request, response, DATABASE) {
+  static getAllStudents (request, response, DATABASE) {
     readDatabase(DATABASE)
       .then((fields) => {
         const students = [];
         // let count = 0;
         let msg;
-      
+
         students.push('This is the list of our students');
 
         for (const key of Object.keys(fields)) {
@@ -24,7 +24,7 @@ class StudentsController {
       });
   }
 
-  static getAllStudentsByMajor(request, response, DATABASE) {
+  static getAllStudentsByMajor (request, response, DATABASE) {
     const { major } = request.params;
 
     if (major !== 'CS' && major !== 'SWE') {
