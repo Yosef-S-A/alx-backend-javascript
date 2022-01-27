@@ -1,7 +1,7 @@
 import readDatabase from '../utils';
 
 class StudentsController {
-  static getAllStudents (request, response, DATABASE) {
+  static getAllStudents(request, response, DATABASE) {
     readDatabase(DATABASE)
       .then((fields) => {
         const students = [];
@@ -24,7 +24,7 @@ class StudentsController {
       });
   }
 
-  static getAllStudentsByMajor (request, response, DATABASE) {
+  static getAllStudentsByMajor(request, response, DATABASE) {
     const { major } = request.params;
 
     if (major !== 'CS' && major !== 'SWE') {
