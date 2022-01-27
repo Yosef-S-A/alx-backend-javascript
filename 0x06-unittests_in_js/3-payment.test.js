@@ -1,3 +1,6 @@
+/*
+ * test suit using sinon and chai
+ */
 const sinon = require('sinon');
 var { expect } = require('chai');
 
