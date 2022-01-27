@@ -1,6 +1,6 @@
 /*
  * task3: Spies
- * /
+ */
 const Utils = require('./utils');
 
 /*
