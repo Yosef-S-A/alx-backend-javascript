@@ -1,5 +1,5 @@
 const Utils = {
-  calculateNumber(type, a, b) {
+  calculateNumber (type, a, b) {
     const aRound = Math.round(a);
     const bRound = Math.round(b);
 
@@ -15,7 +15,7 @@ const Utils = {
     }
 
     return aRound + bRound;
-  },
+  }
 };
 
-module.exports = Utils
+module.exports = Utils;
