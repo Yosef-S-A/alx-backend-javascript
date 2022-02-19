@@ -1,6 +1,3 @@
-/*
-* Create a more complex HTTP server using Express
-*/
 const express = require('express');
 
 const args = process.argv.slice(2);
